@@ -146,7 +146,7 @@ def game():
         # score
         bridCenterX = (GAME_IMGES["bird"].get_width()/2) + bridX
         for pipe in upperpipes:
-            pipeCenterX = GAME_IMGES["pipe"][0].get_width()/2 + pipe["x"]
+            pipeCenterX = (GAME_IMGES["pipe"][0].get_width()/2) + pipe["x"]
             if pipeCenterX <= bridCenterX < pipeCenterX + abs(pipeSpeedX):
                 score = score + 1
 
